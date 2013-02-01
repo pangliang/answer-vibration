@@ -1,0 +1,14 @@
+Package: com.sharedream.answer-vibration
+Name: 接听震动
+Version: 1.3-1
+Description: 打电话无需贴近手机, 有效避免辐射危害!
+Section: 装机必备
+Depends: firmware (>= 5.0), mobilesubstrate
+Priority: optional
+Architecture: iphoneos-arm
+Author: liangwei <http://weibo.com/iamliangwei>
+Homepage: http://weibo.com/iamliangwei
+Depiction: http://liang8305.github.com/cydia/depiction/answer-vibration/
+Icon: file:///Library/PreferenceLoader/Preferences/answer_vibrationIcon.png
+Maintainer: liangwei <http://weibo.com/iamliangwei>
+

@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		812B79F71675F26300C741D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B79F61675F26300C741D1 /* Foundation.framework */; };
+		812B7A071675F26300C741D1 /* answer_vibration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 812B7A061675F26300C741D1 /* answer_vibration.mm */; };
+		812B7A111675F31600C741D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B7A101675F31600C741D1 /* AudioToolbox.framework */; };
+		812B7A131675F31B00C741D1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B7A121675F31B00C741D1 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		812B79F31675F26300C741D1 /* answer-vibration.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "answer-vibration.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		812B79F61675F26300C741D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		812B79FB1675F26300C741D1 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		812B79FC1675F26300C741D1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		812B79FE1675F26300C741D1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		812B7A021675F26300C741D1 /* answer_vibration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = answer_vibration.plist; path = Package/Library/PreferenceLoader/Preferences/answer_vibration.plist; sourceTree = "<group>"; };
+		812B7A031675F26300C741D1 /* answer_vibrationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = answer_vibrationIcon.png; path = Package/Library/PreferenceLoader/Preferences/answer_vibrationIcon.png; sourceTree = "<group>"; };
+		812B7A041675F26300C741D1 /* answer_vibrationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "answer_vibrationIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/answer_vibrationIcon@2x.png"; sourceTree = "<group>"; };
+		812B7A051675F26300C741D1 /* answer-vibration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "answer-vibration-Prefix.pch"; sourceTree = "<group>"; };
+		812B7A061675F26300C741D1 /* answer_vibration.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = answer_vibration.mm; sourceTree = "<group>"; };
+		812B7A0A1675F26300C741D1 /* answer_vibration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = answer_vibration.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/answer_vibration.plist; sourceTree = "<group>"; };
+		812B7A101675F31600C741D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		812B7A121675F31B00C741D1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		812B79EF1675F26300C741D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812B7A131675F31B00C741D1 /* CoreTelephony.framework in Frameworks */,
+				812B7A111675F31600C741D1 /* AudioToolbox.framework in Frameworks */,
+				812B79F71675F26300C741D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		812B79E71675F26300C741D1 = {
+			isa = PBXGroup;
+			children = (
+				812B7A121675F31B00C741D1 /* CoreTelephony.framework */,
+				812B7A101675F31600C741D1 /* AudioToolbox.framework */,
+				812B79F81675F26300C741D1 /* answer-vibration */,
+				812B79F51675F26300C741D1 /* Frameworks */,
+				812B79F41675F26300C741D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		812B79F41675F26300C741D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				812B79F31675F26300C741D1 /* answer-vibration.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		812B79F51675F26300C741D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				812B79F61675F26300C741D1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		812B79F81675F26300C741D1 /* answer-vibration */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A061675F26300C741D1 /* answer_vibration.mm */,
+				812B79F91675F26300C741D1 /* Package */,
+				812B79FD1675F26300C741D1 /* Supporting Files */,
+			);
+			path = "answer-vibration";
+			sourceTree = "<group>";
+		};
+		812B79F91675F26300C741D1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				812B79FA1675F26300C741D1 /* DEBIAN */,
+				812B79FF1675F26300C741D1 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		812B79FA1675F26300C741D1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				812B79FB1675F26300C741D1 /* control.txt */,
+				812B79FC1675F26300C741D1 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		812B79FD1675F26300C741D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				812B79FE1675F26300C741D1 /* PackageVersion.plist */,
+				812B7A051675F26300C741D1 /* answer-vibration-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		812B79FF1675F26300C741D1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A001675F26300C741D1 /* PreferenceLoader */,
+				812B7A081675F26300C741D1 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		812B7A001675F26300C741D1 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A011675F26300C741D1 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		812B7A011675F26300C741D1 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A021675F26300C741D1 /* answer_vibration.plist */,
+				812B7A031675F26300C741D1 /* answer_vibrationIcon.png */,
+				812B7A041675F26300C741D1 /* answer_vibrationIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		812B7A081675F26300C741D1 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A091675F26300C741D1 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		812B7A091675F26300C741D1 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				812B7A0A1675F26300C741D1 /* answer_vibration.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		812B79F01675F26300C741D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		812B79F21675F26300C741D1 /* answer-vibration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812B7A0D1675F26300C741D1 /* Build configuration list for PBXNativeTarget "answer-vibration" */;
+			buildPhases = (
+				812B79EE1675F26300C741D1 /* Sources */,
+				812B79EF1675F26300C741D1 /* Frameworks */,
+				812B79F01675F26300C741D1 /* Headers */,
+				812B79F11675F26300C741D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "answer-vibration";
+			productName = "answer-vibration";
+			productReference = 812B79F31675F26300C741D1 /* answer-vibration.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		812B79E91675F26300C741D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 812B79EC1675F26300C741D1 /* Build configuration list for PBXProject "answer-vibration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 812B79E71675F26300C741D1;
+			productRefGroup = 812B79F41675F26300C741D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				812B79F21675F26300C741D1 /* answer-vibration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		812B79F11675F26300C741D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812B79EE1675F26300C741D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812B7A071675F26300C741D1 /* answer_vibration.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		812B7A0B1675F26300C741D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		812B7A0C1675F26300C741D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		812B7A0E1675F26300C741D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "answer-vibration/answer-vibration-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.100;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		812B7A0F1675F26300C741D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "answer-vibration/answer-vibration-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.100;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812B79EC1675F26300C741D1 /* Build configuration list for PBXProject "answer-vibration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812B7A0B1675F26300C741D1 /* Release */,
+				812B7A0C1675F26300C741D1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812B7A0D1675F26300C741D1 /* Build configuration list for PBXNativeTarget "answer-vibration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812B7A0E1675F26300C741D1 /* Release */,
+				812B7A0F1675F26300C741D1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 812B79E91675F26300C741D1 /* Project object */;
+}
