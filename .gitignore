@@ -2,3 +2,12 @@
 .DS_Store
 
 LatestBuild
+
+.Packes/*
+
+Packages/*
+
+DerivedData/*
+
+
+Packages/com.sharedream.answer-vibration_1.3-1_iphoneos-arm.zip

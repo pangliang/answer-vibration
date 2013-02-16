@@ -1,9 +1,9 @@
 Package: com.sharedream.answer-vibration
 Name: 接听震动
-Version: 1.3-1
+Version: 1.4-1
 Description: 打电话无需贴近手机, 有效避免辐射危害!
 Section: 装机必备
-Depends: firmware (>= 5.0), mobilesubstrate
+Depends: firmware (>= 5.0), sbsettings
 Priority: optional
 Architecture: iphoneos-arm
 Author: liangwei <http://weibo.com/iamliangwei>
