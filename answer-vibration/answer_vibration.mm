@@ -54,7 +54,7 @@ static void completionCallback(SystemSoundID systemSoundID, void *myself)
     timesOfVibrate--;
     if(timesOfVibrate>0)
     {
-        [NSThread sleepForTimeInterval:0.4];
+        [NSThread sleepForTimeInterval:0.3];
         NSLog(@"========  play again %d====",timesOfVibrate);
         AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate,NULL,NULL,completionCallback,NULL);
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
