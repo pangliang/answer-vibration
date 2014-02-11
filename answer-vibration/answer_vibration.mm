@@ -49,15 +49,17 @@ static int timesOfVibrate = 0;
 static void completionCallback(SystemSoundID systemSoundID, void *myself)
 {
     NSLog(@"========  completionCallback");
-    AudioServicesDisposeSystemSoundID(systemSoundID);
+    //AudioServicesDisposeSystemSoundID(systemSoundID);
     
     timesOfVibrate--;
     if(timesOfVibrate>0)
     {
         [NSThread sleepForTimeInterval:0.3];
         NSLog(@"========  play again %d====",timesOfVibrate);
-        AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate,NULL,NULL,completionCallback,NULL);
+        //AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate,NULL,NULL,completionCallback,NULL);
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    }else{
+        AudioServicesRemoveSystemSoundCompletion(kSystemSoundID_Vibrate);
     }
 }
 
