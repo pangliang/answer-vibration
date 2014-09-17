@@ -309,7 +309,7 @@
 				VALID_ARCHS = "armv7 armv7s arm64";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 10.32.183.21;
+				iOSOpenDevDevice = 192.168.1.200;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -331,7 +331,7 @@
 				VALID_ARCHS = "armv7 armv7s arm64";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 10.32.183.21;
+				iOSOpenDevDevice = 192.168.1.200;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
